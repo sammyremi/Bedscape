@@ -108,10 +108,15 @@ const Home = () => {
           <p className="text-base text-left mb-4">Overview</p>
         </div>
         <div className=" h-40 grid lg:grid-cols-4 content-center gap-4 px-2">
-          <div className="bg-orange-200 rounded-md  h-36">a</div>
-          <div className="bg-orange-200 rounded-md h-36">b</div>
-          <div className="bg-orange-200 rounded-md h-36">c</div>
-          <div className="bg-orange-200 rounded-md  h-36">d</div>
+          {/* 1st choice #f9fdff 2nd choice  #f2faff*/}
+          <div className="bg-[#f2faff] drop-shadow-md rounded-md  h-36 flex flex-col">
+            <div className="bg-sky-600 rounded-full h-10 w-10"></div>
+            <p>Total bedspace</p>
+            <p className="">6</p>
+          </div>
+          <div className="bg-[#f2faff] drop-shadow-md rounded-md h-36">b</div>
+          <div className="bg-[#f2faff] drop-shadow-md rounded-md h-36">c</div>
+          <div className="bg-[#f2faff] drop-shadow-md rounded-md  h-36">d</div>
         </div>
       </div>
       {/* Apartments */}
