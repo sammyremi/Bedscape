@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 // import Loading from "../Loading";
+import { Occupied_icon, TotApt_icon, Vacant_icon } from "../images/icons";
 import {
   Chart as ChartJS,
   BarElement,
@@ -107,16 +108,41 @@ const Home = () => {
         <div className="">
           <p className="text-base text-left mb-4">Overview</p>
         </div>
-        <div className=" h-40 grid lg:grid-cols-4 content-center gap-4 px-2">
+        <div className=" h-40 grid lg:grid-cols-4 content-center gap-8 px-2">
           {/* 1st choice #f9fdff 2nd choice  #f2faff*/}
-          <div className="bg-[#f2faff] drop-shadow-md rounded-md  h-36 flex flex-col">
-            <div className="bg-sky-600 rounded-full h-10 w-10"></div>
-            <p>Total bedspace</p>
-            <p className="">6</p>
+          {/* map card items */}
+
+          <div className="bg-[#f2faff] drop-shadow-md rounded-md  h-36 flex flex-col p-4">
+            <div className="bg-sky-600 rounded-full h-10 w-10 mb-2 grid place-content-center">
+              <Occupied_icon />
+            </div>
+            <p className="text-left mb-1  text-gray-500">Occupied bedspace</p>
+            <p className="text-left text-2xl">6</p>
           </div>
-          <div className="bg-[#f2faff] drop-shadow-md rounded-md h-36">b</div>
-          <div className="bg-[#f2faff] drop-shadow-md rounded-md h-36">c</div>
-          <div className="bg-[#f2faff] drop-shadow-md rounded-md  h-36">d</div>
+
+          <div className="bg-[#f2faff] drop-shadow-md rounded-md  h-36 flex flex-col p-4">
+            <div className="bg-[#d398e7] rounded-full h-10 w-10 mb-2 grid place-content-center">
+              <TotApt_icon />
+            </div>
+            <p className="text-left mb-1  text-gray-500">Total Apartments</p>
+            <p className="text-left text-2xl">8</p>
+          </div>
+
+          <div className="bg-[#f2faff] drop-shadow-md rounded-md  h-36 flex flex-col p-4">
+            <div className="bg-[#e89271] rounded-full h-10 w-10 mb-2 grid place-content-center">
+              <Vacant_icon />
+            </div>
+            <p className="text-left mb-1  text-gray-500">Vacant bedspace</p>
+            <p className="text-left text-2xl">6</p>
+          </div>
+
+          <div className="bg-[#f2faff] drop-shadow-md rounded-md  h-36 flex flex-col p-4">
+            <div className="bg-sky-600 rounded-full h-10 w-10 mb-2 grid place-content-center">
+              <Occupied_icon />
+            </div>
+            <p className="text-left mb-1  text-gray-500">Occupied bedspace</p>
+            <p className="text-left text-2xl">6</p>
+          </div>
         </div>
       </div>
       {/* Apartments */}
