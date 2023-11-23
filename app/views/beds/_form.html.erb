@@ -1,0 +1,52 @@
+<%= form_with(model: bed) do |form| %>
+  <% if bed.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(bed.errors.count, "error") %> prohibited this bed from being saved:</h2>
+
+      <ul>
+        <% bed.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :bedspace_id, style: "display: block" %>
+    <%= form.text_field :bedspace_id %>
+  </div>
+
+  <div>
+    <%= form.label :occupant_firstname, style: "display: block" %>
+    <%= form.text_field :occupant_firstname %>
+  </div>
+
+  <div>
+    <%= form.label :occupant_lastname, style: "display: block" %>
+    <%= form.text_field :occupant_lastname %>
+  </div>
+
+  <div>
+    <%= form.label :occupant_email, style: "display: block" %>
+    <%= form.text_field :occupant_email %>
+  </div>
+
+  <div>
+    <%= form.label :status, style: "display: block" %>
+    <%= form.text_field :status %>
+  </div>
+
+  <div>
+    <%= form.label :occupant_campaign, style: "display: block" %>
+    <%= form.text_field :occupant_campaign %>
+  </div>
+
+  <div>
+    <%= form.label :room_id, style: "display: block" %>
+    <%= form.text_field :room_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

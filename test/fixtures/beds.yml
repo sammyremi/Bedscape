@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bedspace_id: MyString
+  occupant_firstname: MyString
+  occupant_lastname: MyString
+  occupant_email: MyString
+  status: MyString
+  occupant_campaign: MyString
+  room: one
+
+two:
+  bedspace_id: MyString
+  occupant_firstname: MyString
+  occupant_lastname: MyString
+  occupant_email: MyString
+  status: MyString
+  occupant_campaign: MyString
+  room: two
