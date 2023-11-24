@@ -145,7 +145,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/* Apartments */}
+      {/* Graph */}
       <div className="text-center mt-4">
         <div className="">
           <p className="text-base text-left mb-4">Graph Analysis</p>
@@ -179,6 +179,35 @@ const Home = () => {
               data={floor2data}
               options={chart_options}
             ></Bar>
+          </div>
+        </div>
+      </div>
+      {/* Recent Occupants */}
+      <div className="text-center mt-4">
+        <div className="">
+          <p className="text-base text-left mb-4">Recent Occupants</p>
+        </div>
+        {/* map recent occupants */}
+        <div className="flex flex-col space-y-4">
+          <div className=" h-12 flex items-center justify-between px-2 pr-10 ">
+            <div className="flex items-center gap-x-2">
+              <div className="bg-sky-600 rounded-full h-10 w-10 mb-2 grid place-content-center">
+                <Occupied_icon />
+              </div>
+              <div className="">Jane Doe</div>
+            </div>
+            <div className="">test@testmail.co.ng</div>
+            <div className="">Chief Operations Officer</div>
+          </div>
+          <div className="h-12 flex items-center justify-between px-2 pr-10">
+            <div className="flex items-center gap-x-2">
+              <div className="bg-sky-600 rounded-full h-10 w-10 mb-2 grid place-content-center">
+                <Occupied_icon />
+              </div>
+              <div className="">John Doe</div>
+            </div>
+            <div className="">test@testmail.co.ng</div>
+            <div className="">Chief Executive Analyst</div>
           </div>
         </div>
       </div>
